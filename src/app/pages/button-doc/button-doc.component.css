@@ -1,14 +1,13 @@
 .documentation{
     display: flex;
     flex-direction: column;
-    gap: calc(0.45pt * 64);
-    padding: calc(0.45pt * 16);
+    gap: 32px;
 }
 
 .documentation-example{
     display: flex;
     flex-direction: column;
-    gap: calc(0.45pt * 32);
+    gap: 32px;
 }
 
 .documentation-example-title{
