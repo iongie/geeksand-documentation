@@ -4,6 +4,7 @@ import { ButtonComponent } from './button/button.component';
 import { TopBarComponent } from './app-bars/top-bar/top-bar.component';
 import { TopBarDirective } from './app-bars/top-bar/top-bar.directive';
 import { MainComponent } from './main/main.component';
+import { NavDrawerComponent } from './navigation/nav-drawer/nav-drawer.component';
 
 
 
@@ -12,7 +13,8 @@ import { MainComponent } from './main/main.component';
     ButtonComponent,
     TopBarComponent,
     TopBarDirective,
-    MainComponent
+    MainComponent,
+    NavDrawerComponent
   ],
   imports: [
     CommonModule
@@ -21,7 +23,8 @@ import { MainComponent } from './main/main.component';
     ButtonComponent,
     TopBarComponent,
     TopBarDirective,
-    MainComponent
+    MainComponent,
+    NavDrawerComponent
   ]
 })
 export class ComponentsModule { }
