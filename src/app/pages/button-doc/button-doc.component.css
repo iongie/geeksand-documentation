@@ -1,0 +1,40 @@
+.documentation{
+    display: flex;
+    flex-direction: column;
+    gap: calc(0.45pt * 64);
+    padding: calc(0.45pt * 16);
+}
+
+.documentation-example{
+    display: flex;
+    flex-direction: column;
+    gap: calc(0.45pt * 32);
+}
+
+.documentation-example-title{
+    text-transform: capitalize;
+}
+
+.documentation-result-example{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: calc(0.45pt * 16);
+    height: calc(0.45pt * 330);
+    outline: 1px var(--surface-dim) solid;
+    border-radius: var(--shape-corner-large);
+}
+
+.documentation-code-example{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(0.45pt * 330);
+    background-color: var(--surface-container-low);
+    outline: 1px var(--surface-container) solid;
+    border-radius: var(--shape-corner-extra-large);
+    color: var(--on-surface);
+    overflow: auto;
+}

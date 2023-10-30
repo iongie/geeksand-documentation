@@ -1,0 +1,173 @@
+<main class="documentation">
+    <h1 class="display-medium">gks-button</h1>
+    <p class="body-large">
+        Buttons provide a clickable element, which can be used in forms, or anywhere that needs simple, standard button
+        functionality. They may display text, icons, or both. Buttons can be styled with several attributes to look a
+        specific way.
+    </p>
+    <section class="documentation-example">
+        <h2 class="headline-medium documentation-example-title">
+            outlined button
+        </h2>
+        <div class="documentation-result-example">
+            <gks-button [type]="'button'" [model]="outlinedButton" [disabled]="false">
+                <p text>default</p>
+            </gks-button>
+            <gks-button [type]="'button'" [model]="outlinedButton" [disabled]="true">
+                <p text>default</p>
+            </gks-button>
+            <gks-button [type]="'button'" [model]="outlinedButton" [disabled]="true">
+                <span class="material-icons" icon>add</span>
+            </gks-button>
+        </div>
+        <pre class="documentation-code-example">
+            <code>
+                &lt;gks-button [type]="'button'" [model]="outlinedButton" [disabled]="false"&gt;
+                    &lt;p text&gt;default&lt;/p&gt;
+                &lt;/gks-button&gt;
+            </code>
+        </pre>
+    </section>
+
+    <section class="documentation-example">
+        <h2 class="headline-medium documentation-example-title">
+            filled button
+        </h2>
+        <div class="documentation-result-example">
+            <gks-button [type]="'button'" [model]="filledButton" [disabled]="false">
+                <p text>filled</p>
+            </gks-button>
+            <gks-button [type]="'button'" [model]="filledButton" [disabled]="true">
+                <p text>filled</p>
+            </gks-button>
+        </div>
+        <pre class="documentation-code-example">
+            <code>
+                &lt;gks-button [type]="'button'" [model]="filledButton" [disabled]="false"&gt;
+                    &lt;p text&gt;filled&lt;/p&gt;
+                &lt;/gks-button&gt;
+            </code>
+        </pre>
+    </section>
+
+    <section class="documentation-example">
+        <h2 class="headline-medium documentation-example-title">
+            none button
+        </h2>
+        <div class="documentation-result-example">
+            <gks-button [type]="'button'" [model]="button" [disabled]="false">
+                <p text>none</p>
+            </gks-button>
+            <gks-button [type]="'button'" [model]="button" [disabled]="true">
+                <p text>none</p>
+            </gks-button>
+        </div>
+        <pre class="documentation-code-example">
+            <code>
+                &lt;gks-button [type]="'button'" [model]="button" [disabled]="false"&gt;
+                    &lt;p text&gt;filled&lt;/p&gt;
+                &lt;/gks-button&gt;
+            </code>
+        </pre>
+    </section>
+
+    <section class="documentation-example">
+        <h2 class="headline-medium documentation-example-title">
+            elevated button
+        </h2>
+        <div class="documentation-result-example">
+            <gks-button [type]="'button'" [model]="elevatedButton" [disabled]="false">
+                <p text>elevated</p>
+            </gks-button>
+            <gks-button [type]="'button'" [model]="elevatedButton" [disabled]="true">
+                <p text>elevated</p>
+            </gks-button>
+        </div>
+        <pre class="documentation-code-example">
+            <code>
+                &lt;gks-button [type]="'button'" [model]="elevatedButton" [disabled]="false"&gt;
+                    &lt;p text&gt;elevated&lt;/p&gt;
+                &lt;/gks-button&gt;
+            </code>
+        </pre>
+    </section>
+
+    <section class="documentation-example">
+        <h2 class="headline-medium documentation-example-title">
+            Fab
+        </h2>
+        <div class="documentation-result-example">
+            <gks-button [type]="'button'" [model]="fab" [disabled]="false">
+                <span class="material-icons" icon>add</span>
+            </gks-button>
+            <gks-button [type]="'button'" [model]="fab" [disabled]="true">
+                <span class="material-icons" icon>add</span>
+            </gks-button>
+        </div>
+        <pre class="documentation-code-example">
+            <code>
+                &lt;gks-button [type]="'button'" [model]="fab" [disabled]="false"&gt;
+                    &lt;span class="material-icons" icon&gt;add&lt;/span&gt;
+                &lt;/gks-button&gt;
+            </code>
+        </pre>
+    </section>
+
+    <section class="documentation-example">
+        <h2 class="headline-medium documentation-example-title">
+            fab extended
+        </h2>
+        <div class="documentation-result-example">
+            <gks-button [type]="'button'" [model]="fabExtended" [disabled]="false">
+                <span class="material-icons" icon>add</span>
+                <p text>fab extended</p>
+            </gks-button>
+            <gks-button [type]="'button'" [model]="fabExtended" [disabled]="true">
+                <span class="material-icons" icon>add</span>
+                <p text>fab extended</p>
+            </gks-button>
+        </div>
+        <pre class="documentation-code-example">
+            <code>
+                &lt;gks-button [type]="'button'" [model]="fabExtended" [disabled]="false"&gt;
+                    &lt;span class="material-icons" icon&gt;add&lt;/span&gt;
+                    &lt;p text&gt;elevated&lt;/p&gt;
+                &lt;/gks-button&gt;
+            </code>
+        </pre>
+    </section>
+
+    <section class="documentation-example">
+        <h2 class="headline-medium documentation-example-title">
+            icon only
+        </h2>
+        <div class="documentation-result-example">
+            <gks-button [type]="'button'" [model]="iconOutlined" [disabled]="false">
+                <span class="material-icons" icon>add</span>
+            </gks-button>
+            <gks-button [type]="'button'" [model]="iconOutlined" [disabled]="true">
+                <span class="material-icons" icon>add</span>
+            </gks-button>
+            <gks-button [type]="'button'" [model]="iconFilled" [disabled]="false">
+                <span class="material-icons" icon>add</span>
+            </gks-button>
+            <gks-button [type]="'button'" [model]="iconFilled" [disabled]="true">
+                <span class="material-icons" icon>add</span>
+            </gks-button>
+        </div>
+        <pre class="documentation-code-example">
+            <code>
+                &lt;gks-button [type]="'button'" [model]="iconOutlined" [disabled]="false"&gt;
+                    &lt;span class="material-icons" icon&gt;add&lt;/span&gt;
+                &lt;/gks-button&gt;
+            </code>
+
+            
+            <code>
+                &lt;gks-button [type]="'button'" [model]="iconFilled" [disabled]="false"&gt;
+                    &lt;span class="material-icons" icon&gt;add&lt;/span&gt;
+                &lt;/gks-button&gt;
+            </code>
+        </pre>
+    </section>
+</main>

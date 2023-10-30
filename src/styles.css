@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'material-icons/iconfont/material-icons.css';
+@import url("./assets/theme-web/color.css");
+@import url("./assets/theme-web/elevation.css");
+@import url("./assets/theme-web/font.css");
+@import url("./assets/theme-web/motion.css");
+@import url("./assets/theme-web/shape.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline: red solid 1px; */
+}
