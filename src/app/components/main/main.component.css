@@ -1,0 +1,22 @@
+.center-main-container,
+.small-main-container,
+.medium-main-container,
+.large-main-container{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-bottom: calc(80px + 4px);
+}
+
+.center-main-container,
+.small-main-container{
+    padding-top: calc(64px + 4px);
+}
+
+.medium-main-container,
+.large-main-container{
+    padding-top: calc(152px + 4px);
+}
+

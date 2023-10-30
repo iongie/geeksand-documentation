@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { ButtonComponent } from './button/button.component';
 import { TopBarComponent } from './app-bars/top-bar/top-bar.component';
 import { TopBarDirective } from './app-bars/top-bar/top-bar.directive';
+import { MainComponent } from './main/main.component';
 
 
 
@@ -10,7 +11,8 @@ import { TopBarDirective } from './app-bars/top-bar/top-bar.directive';
   declarations: [
     ButtonComponent,
     TopBarComponent,
-    TopBarDirective
+    TopBarDirective,
+    MainComponent
   ],
   imports: [
     CommonModule
@@ -18,7 +20,8 @@ import { TopBarDirective } from './app-bars/top-bar/top-bar.directive';
   exports: [
     ButtonComponent,
     TopBarComponent,
-    TopBarDirective
+    TopBarDirective,
+    MainComponent
   ]
 })
 export class ComponentsModule { }
