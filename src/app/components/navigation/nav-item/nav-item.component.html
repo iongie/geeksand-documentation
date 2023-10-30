@@ -1,0 +1,9 @@
+<ng-container>
+    <div [ngClass]="itemIndicator ? [model+'-indicator-item', model+'-active-indicator-item']:model+'-indicator-item'">
+        <ng-content select="[navItemIcon]"></ng-content>
+        <ng-content select="[navDrawerItemText]"></ng-content>
+        <ng-content select="[navDrawerBadge]"></ng-content>
+    </div>
+    <ng-content select="[navBarBadge]"></ng-content>
+    <ng-content select="[navBarItemText]"></ng-content>
+</ng-container>

@@ -6,6 +6,7 @@ import { TopBarDirective } from './app-bars/top-bar/top-bar.directive';
 import { MainComponent } from './main/main.component';
 import { NavDrawerComponent } from './navigation/nav-drawer/nav-drawer.component';
 import { BackdropComponent } from './backdrop/backdrop.component';
+import { NavItemComponent } from './navigation/nav-item/nav-item.component';
 
 
 
@@ -16,7 +17,8 @@ import { BackdropComponent } from './backdrop/backdrop.component';
     TopBarDirective,
     MainComponent,
     NavDrawerComponent,
-    BackdropComponent
+    BackdropComponent,
+    NavItemComponent
   ],
   imports: [
     CommonModule
@@ -27,7 +29,8 @@ import { BackdropComponent } from './backdrop/backdrop.component';
     TopBarDirective,
     MainComponent,
     NavDrawerComponent,
-    BackdropComponent
+    BackdropComponent,
+    NavItemComponent
   ]
 })
 export class ComponentsModule { }

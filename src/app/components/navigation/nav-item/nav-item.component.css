@@ -1,0 +1,73 @@
+[navItemIcon] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--dp-24);
+    color: var(--on-surface);
+}
+
+.navbar-indicator-item {
+    height: var(--dp-32);
+    width: var(--dp-64);
+    border-radius: var(--shape-corner-small);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--dp-4);
+}
+
+:hover>.navbar-indicator-item {
+    background-color: var(--surface-dim);
+}
+
+.navbar-active-indicator-item {
+    background-color: var(--surface-container-high);
+}
+
+[navBarItemText] {
+    font-family: var(--label-large-font-family-name);
+    font-style: var(--label-large-font-family-style);
+    font-weight: var(--label-large-font-weight);
+    font-size: var(--label-large-font-size);
+    letter-spacing: var(--label-large-letter-spacing);
+    line-height: var(--label-large-height);
+    text-transform: var(--label-large-text-transform);
+    text-decoration: var(--label-large-text-decoration);
+    color: var(--on-surface);
+}
+
+.navdrawer-indicator-item {
+    height: var(--dp-56);
+    width: var(--dp-336);
+    border-radius: var(--shape-corner-full);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: var(--dp-12);
+    padding: 0 var(--dp-16) 0 var(--dp-24);
+}
+
+:hover>.navdrawer-indicator-item {
+    background-color: var(--surface-dim);
+}
+
+.navdrawer-active-indicator-item {
+    background-color: var(--surface-container-high);
+}
+
+[navDrawerItemText] {
+    font-family: var(--label-large-font-family-name);
+    font-style: var(--label-large-font-family-style);
+    font-weight: var(--label-large-font-weight);
+    font-size: var(--label-large-font-size);
+    letter-spacing: var(--label-large-letter-spacing);
+    line-height: var(--label-large-height);
+    text-transform: var(--label-large-text-transform);
+    text-decoration: var(--label-large-text-decoration);
+    color: var(--on-surface);
+    flex: 1;
+    text-transform: capitalize;
+}
