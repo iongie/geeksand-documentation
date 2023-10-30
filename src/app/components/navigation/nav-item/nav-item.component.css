@@ -2,22 +2,23 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: var(--dp-24);
+    font-size: 24px;
     color: var(--on-surface);
 }
 
 .navbar-indicator-item {
-    height: var(--dp-32);
-    width: var(--dp-64);
+    height: 32px;
+    width: 64px;
     border-radius: var(--shape-corner-small);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: var(--dp-4);
+    gap: 4px;
 }
 
-:hover>.navbar-indicator-item {
+:hover>.navbar-indicator-item,
+:active>.navbar-indicator-item {
     background-color: var(--surface-dim);
 }
 
@@ -38,19 +39,20 @@
 }
 
 .navdrawer-indicator-item {
-    height: var(--dp-56);
-    width: var(--dp-336);
+    height: 56px;
+    width: 336px;
     border-radius: var(--shape-corner-full);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: var(--dp-12);
-    padding: 0 var(--dp-16) 0 var(--dp-24);
+    gap: 12px;
+    padding: 0 16px 0 24px;
 }
 
-:hover>.navdrawer-indicator-item {
+:hover>.navdrawer-indicator-item,
+:active>.navdrawer-indicator-item {
     background-color: var(--surface-dim);
 }
 

@@ -1,8 +1,23 @@
 <gks-top-bar [model]="modelTopBar">
-    <span class="material-icons" centerLeadingIcon>menu</span>
+    <span class="material-icons" centerLeadingIcon (click)="menuAction()">menu</span>
     <h1 class="title-large" centerTitle>Geeksand Library</h1>
     <span class="material-icons" centerTrailingIcon>tune</span>
 </gks-top-bar>
+<gks-nav-drawer [model]="modelNavDrawer" *ngIf="sideMenu" (click)="menuAction()">
+    <h6 class="title-large" navDrawerTitle>Geeksand</h6>
+    <gks-nav-item [model]="modelNavDrawerItem" [itemIndicator]="true" navDrawerItem>
+        <span class="material-icons" navItemIcon>home</span>
+        <p navDrawerItemText>home</p>
+    </gks-nav-item>
+    <gks-nav-item [model]="modelNavDrawerItem" [itemIndicator]="false" navDrawerItem>
+        <span class="material-icons" navItemIcon>person</span>
+        <p navDrawerItemText>profil</p>
+    </gks-nav-item>
+    <gks-nav-item [model]="modelNavDrawerItem" [itemIndicator]="false" navDrawerItem>
+        <span class="material-icons" navItemIcon>chat</span>
+        <p navDrawerItemText>message</p>
+    </gks-nav-item>
+</gks-nav-drawer>
 <gks-main [model]="largeModelMain">
     <router-outlet></router-outlet>
 </gks-main>

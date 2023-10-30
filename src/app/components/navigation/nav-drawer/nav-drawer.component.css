@@ -1,6 +1,6 @@
 .modal-nav-drawer,
 .standar-nav-drawer{
-    max-width: var(--dp-360);
+    max-width: 360px;
     min-height: 100vh;
     background-color: var(--surface-container);
     display: flex;
@@ -8,8 +8,8 @@
     align-items: center;
     justify-content: flex-start;
     flex-wrap: wrap;
-    padding: var(--dp-8);
-    gap: var(--dp-8);
+    padding: 16px 8px 0 16px;
+    gap: 8px;
 }
 .standar-nav-drawer{
     box-shadow: var(--elevation-0);
