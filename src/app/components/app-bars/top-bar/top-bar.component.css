@@ -1,0 +1,123 @@
+.elevated{
+    box-shadow: var(--elevation-1);
+}
+
+.center-topBar,
+.small-topBar,
+.medium-topBar,
+.large-topBar,
+.tab-topBar {
+    display: flex;
+    flex-direction: row;
+    gap: var(--dp-24);
+    width: 100%;
+    padding: 0 var(--dp-16) 0 var(--dp-16);
+    background-color: var(--surface-container);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 50;
+}
+
+.center-topBar,
+.small-topBar {
+    height: var(--dp-64);
+    color: var(--on-surface);
+}
+
+.center-topBar,
+.tab-topBar {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.small-topBar {
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.medium-topBar {
+    height: var(--dp-112);
+}
+
+.large-topBar {
+    height: var(--dp-152);
+}
+
+.tab-topBar {
+    padding-top: var(--dp-16);
+    height: var(--dp-152);
+}
+
+.medium-topBar,
+.large-topBar,
+.tab-topBar {
+    flex-wrap: wrap;
+}
+
+[centerTitle] ,
+[smallTitle],
+[mediumTitle],
+[largeTitle],
+[tabTitle]{
+    color: var(--on-surface);
+    text-transform: capitalize;
+}
+
+[centerTitle],
+[smallTitle],
+[mediumTitle],
+[largeTitle]{
+    flex: 1;
+}
+
+[centerTitle],
+[tabTitle]{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tab-group-trailingIcon,
+[tabLeadingIcon]{
+    flex: 0;
+}
+
+.medium-group-trailingIcon,
+.large-group-trailingIcon,
+[mediumLeadingIcon],
+[largeLeadingIcon]{ 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex: 1 0 47%;
+    font-size: var(--dp-24);
+    color: var(--on-surface);
+}
+
+.center-group-trailingIcon,
+.small-group-trailingIcon,
+.tab-group-trailingIcon,
+[tabLeadingIcon],
+[centerLeadingIcon],
+[smallLeadingIcon]{ 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: var(--dp-24);
+    color: var(--on-surface);
+}
+
+.center-group-trailingIcon,
+.small-group-trailingIcon,
+.medium-group-trailingIcon,
+.large-group-trailingIcon,
+.tab-group-trailingIcon{
+    justify-content: flex-end;
+    gap: var(--dp-24);
+}
+
+[tab]{
+    flex: 1;
+    flex: 100%;
+}

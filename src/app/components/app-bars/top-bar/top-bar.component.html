@@ -1,0 +1,23 @@
+<header [ngClass]="model+'-topBar'" gksTopBar>
+    <ng-content select="[centerLeadingIcon]"></ng-content>
+    <ng-content select="[smallLeadingIcon]"></ng-content>
+    <ng-content select="[mediumLeadingIcon]"></ng-content>
+    <ng-content select="[largeLeadingIcon]"></ng-content>
+    <ng-content select="[tabLeadingIcon]"></ng-content>
+
+    <ng-content select="[smallTitle]"></ng-content>
+    <ng-content select="[centerTitle]"></ng-content>
+    <ng-content select="[tabTitle]"></ng-content>
+
+    <div [ngClass]="model+'-group-trailingIcon'">
+        <ng-content select="[centerTrailingIcon]"></ng-content>
+        <ng-content select="[smallTrailingIcon]"></ng-content>
+        <ng-content select="[mediumTrailingIcon]"></ng-content>
+        <ng-content select="[largeTrailingIcon]"></ng-content>
+        <ng-content select="[tabTrailingIcon]"></ng-content>
+    </div>
+
+    <ng-content select="[mediumTitle]"></ng-content>
+    <ng-content select="[largeTitle]"></ng-content>
+    <ng-content select="[tab]"></ng-content>
+</header>
