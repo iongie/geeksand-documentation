@@ -1,1 +1,8 @@
-<router-outlet></router-outlet>
+<gks-top-bar [model]="modelTopBar">
+    <span class="material-icons" centerLeadingIcon>menu</span>
+    <h1 class="title-large" centerTitle>Geeksand Library</h1>
+    <span class="material-icons" centerTrailingIcon>tune</span>
+</gks-top-bar>
+<gks-main [model]="largeModelMain">
+    <router-outlet></router-outlet>
+</gks-main>

@@ -9,9 +9,9 @@
 .tab-topBar {
     display: flex;
     flex-direction: row;
-    gap: var(--dp-24);
+    gap: 24px;
     width: 100%;
-    padding: 0 var(--dp-16) 0 var(--dp-16);
+    padding: 0 16px 0 16px;
     background-color: var(--surface-container);
     position: fixed;
     top: 0;
@@ -21,7 +21,7 @@
 
 .center-topBar,
 .small-topBar {
-    height: var(--dp-64);
+    height: 64px;
     color: var(--on-surface);
 }
 
@@ -37,16 +37,16 @@
 }
 
 .medium-topBar {
-    height: var(--dp-112);
+    height: 112px;
 }
 
 .large-topBar {
-    height: var(--dp-152);
+    height: 152px;
 }
 
 .tab-topBar {
-    padding-top: var(--dp-16);
-    height: var(--dp-152);
+    padding-top: 16px;
+    height: 152px;
 }
 
 .medium-topBar,
@@ -91,7 +91,7 @@
     flex-direction: row;
     align-items: center;
     flex: 1 0 47%;
-    font-size: var(--dp-24);
+    font-size: 24px;
     color: var(--on-surface);
 }
 
@@ -104,7 +104,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    font-size: var(--dp-24);
+    font-size: 24px;
     color: var(--on-surface);
 }
 
@@ -114,7 +114,7 @@
 .large-group-trailingIcon,
 .tab-group-trailingIcon{
     justify-content: flex-end;
-    gap: var(--dp-24);
+    gap: 24px;
 }
 
 [tab]{
