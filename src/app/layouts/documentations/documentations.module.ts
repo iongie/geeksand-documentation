@@ -13,6 +13,10 @@ const route: Routes = [
         path: 'buttons',
         loadChildren: () => import('../../pages/button-doc/button-doc.module').then(m => m.ButtonDocModule)
       },
+      {
+        path: 'forms',
+        loadChildren: () => import('../../pages/form-doc/form-doc.module').then(m => m.FormDocModule)
+      },
     ]
   }
 ]

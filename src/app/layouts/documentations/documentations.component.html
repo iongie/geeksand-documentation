@@ -5,17 +5,9 @@
 </gks-top-bar>
 <gks-nav-drawer [model]="modelNavDrawer" *ngIf="sideMenu" (click)="menuAction()">
     <h6 class="title-large" navDrawerTitle>Geeksand</h6>
-    <gks-nav-item [model]="modelNavDrawerItem" [itemIndicator]="true" navDrawerItem>
-        <span class="material-icons" navItemIcon>home</span>
-        <p navDrawerItemText>home</p>
-    </gks-nav-item>
-    <gks-nav-item [model]="modelNavDrawerItem" [itemIndicator]="false" navDrawerItem>
-        <span class="material-icons" navItemIcon>person</span>
-        <p navDrawerItemText>profil</p>
-    </gks-nav-item>
-    <gks-nav-item [model]="modelNavDrawerItem" [itemIndicator]="false" navDrawerItem>
-        <span class="material-icons" navItemIcon>chat</span>
-        <p navDrawerItemText>message</p>
+    <gks-nav-item *ngFor="let navItem of navItem; index as i" [model]="navItem.model" [itemIndicator]="navItem.active"
+      (click)="gotoPage(i)"  navDrawerItem>
+        <p navDrawerItemText>{{navItem.text}}</p>
     </gks-nav-item>
 </gks-nav-drawer>
 <gks-main [model]="largeModelMain">

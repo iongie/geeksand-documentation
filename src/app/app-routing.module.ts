@@ -4,12 +4,16 @@ import { RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'documentations/buttons',
+    redirectTo: 'documentations/forms',
     pathMatch: 'full'
   },
   {
     path:'documentations',
     loadChildren: () => import('./layouts/documentations/documentations.module').then(m => m.DocumentationsModule)
+  },
+  {
+    path:'**',
+    loadChildren: () => import('./pages/not-found/not-found.module').then(m => m.NotFoundModule)
   },
 ];
 

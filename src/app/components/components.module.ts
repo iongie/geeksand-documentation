@@ -7,6 +7,8 @@ import { MainComponent } from './main/main.component';
 import { NavDrawerComponent } from './navigation/nav-drawer/nav-drawer.component';
 import { BackdropComponent } from './backdrop/backdrop.component';
 import { NavItemComponent } from './navigation/nav-item/nav-item.component';
+import { InputComponent } from './forms/input/input.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -18,10 +20,12 @@ import { NavItemComponent } from './navigation/nav-item/nav-item.component';
     MainComponent,
     NavDrawerComponent,
     BackdropComponent,
-    NavItemComponent
+    NavItemComponent,
+    InputComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    ReactiveFormsModule
   ],
   exports: [
     ButtonComponent,
@@ -30,7 +34,8 @@ import { NavItemComponent } from './navigation/nav-item/nav-item.component';
     MainComponent,
     NavDrawerComponent,
     BackdropComponent,
-    NavItemComponent
+    NavItemComponent,
+    InputComponent
   ]
 })
 export class ComponentsModule { }
